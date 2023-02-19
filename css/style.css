@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/stars-bg.png");
+    color: rgb(184, 182, 182);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    min-width: 380px;
+}
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #0152fc #000000;
+  }
+
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #545d60 , #283048 );;
+    border-radius: 10px;
+    border: 0px inset #ffffff;
+  }
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo .star {
+    width: 18px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: .3 ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+section {
+    height: 650px;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.header-container {
+    justify-content: start;
+    padding-left: 0;;
+}
+
+.gold {
+    height: 550px;
+    width: 550px;
+    object-fit: cover;
+}
+
+.title {
+    line-height: 1.2;
+}
+
+.title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: #fff
+}
+
+.title .star {
+    width: 60px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.text-content {
+    padding: 2rem 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button::after {
+    font:  normal normal normal 14px/1 FontAwesome;
+    content: '\e098';
+    margin-left: 1rem;
+}
+
+button:hover{
+    background: linear-gradient(to right, #121772, #075886);
+}
+
+.glow {
+    filter: drop-shadow(-20px 0px 1.75em rgb(81,147,194));
+}
+
+.right-side{
+    justify-self: flex-end;
+}
+
+.title h2{
+    font-size: 24px;
+    opacity: .5;
+}
+
+.line {
+    width: 100%;
+    background-color: rgb(184, 182, 182);
+    height: 2px;
+    margin-top: 1rem;
+}
+
+.type {
+    padding: 1rem 0;
+}
+
+.type:first-child {
+    font-size: 18px;
+
+}
+
+.g-type {
+    color: #0152fc;
+}
+
+.line-blue {
+    background-color: #0152fc;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.directions-cnt {
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 28%;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.img-card{
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-1{
+    background: linear-gradient(to right,
+    #545d60 , #283048
+    );
+}
+
+.card-2{
+    background: linear-gradient(to right,
+    #4b485a , #1f1c2c
+    );
+}
+
+.card-3{
+    background: linear-gradient(to right,
+    #3f4c6b , #535e79
+    );
+}
+
+.card:hover{
+    background: linear-gradient(to left,
+    #3a7bd5, #00d2ff
+    );
+}
+
+.color {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .5 rem;
+}
+
+.card span {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+}
+
+.card:hover .color {
+    color: #fff;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.txt span {
+    color: rgb(1, 82, 252);
+}
+
+.section-4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sides {
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menu li {
+    width: 30%;
+}
+
+.footer-section {
+    height: auto;
+}
+
+footer {
+    padding: 3rem;
+}
+
+.center {
+    justify-self: center;
+}
+
+.star-s2 {
+    position: absolute;
+    width: 65px;
+    right: 40%;
+}
+
+.star-s4{
+    width: 65px;
+    position: absolute;
+    left: -2%;
+    margin-top: 2.5rem;
+}
+.star-s5{
+    position: absolute;
+    left: 40%;
+    width: 40px;
+}
+
+
+.image-animation {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-1,
+    .section-3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        height: auto;
+    }
+    .sides {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container {
+        justify-content: center;
+    }
+    .directions-cnt {
+        flex-direction: column;
+    }
+    .gold {
+        width: 500px;
+        height: 500px;
+    }
+    h1,h2 {
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 600;
+        max-width: 70%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    button {
+        margin: 0px auto;
+        width: 60%;
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .gold {
+        width: 400px;
+        height: 400px;
+        padding: 15px 0px;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 70%;
+    }
+    .title h1 {
+        font-size: 32px;
+    }
+    .menu-items {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .gold {
+        width: 350px;
+        height: 350px;
+        padding: 15px 0px;
+    }
+}
